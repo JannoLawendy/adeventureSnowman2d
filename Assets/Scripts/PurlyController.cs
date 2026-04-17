@@ -1,100 +1,110 @@
-// using UnityEngine;
 
-// public class PurlyController : MonoBehaviour
+
+// using UnityEngine;
+// using UnityEngine.InputSystem;
+
+// public class PurlyMovement : MonoBehaviour
 // {
-//     public float moveSpeed = 5f;
-//     public float rotateSpeed = 200f;
+//     [SerializeField] private float speed = 5.0f;
+//     [SerializeField] private float rotationSpeed = 300.0f;
 
 //     void Update()
 //     {
-//         float move = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-//         float rotate = -Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime;
+//         // Movement (WASD + Arrow Keys)
+//         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+//         {
+//             transform.localPosition += new Vector3(0f, speed * Time.deltaTime, 0f);
+//         }
 
-//         transform.Translate(0, move, 0);
-//         transform.Rotate(0, 0, rotate);
-//     }
+//         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+//         {
+//             transform.localPosition += new Vector3(0f, -speed * Time.deltaTime, 0f);
+//         }
+
+//         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+//         {
+//             transform.localPosition += new Vector3(speed * Time.deltaTime, 0f, 0f);
+//         }
+
+//         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+//         {
+//             transform.localPosition += new Vector3(-speed * Time.deltaTime, 0f, 0f);
+//         }
+
+//        // Rotation (Q/E)
+//         if (Input.GetKey(KeyCode.Q))
+//         {
+//             transform.Find("Bottom").Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
+//         }
+
+//         if (Input.GetKey(KeyCode.E))
+//         {
+//             transform.Find("Bottom").Rotate(0f, -rotationSpeed * Time.deltaTime, 0f);
+//         }
+//     }   
 // }
 
+
+
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PurlyController : MonoBehaviour
+public class PurlyMovement : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed = 4f;
+    [SerializeField] private float speed = 5.0f; // faster now
+    [SerializeField] private float rotationSpeed = 300.0f;
 
-    [Header("Rotation (turn on feet)")]
-    public float rotationSpeed = 540f;
-
-    [Tooltip("Try 0, 90, 180, or 270 until directions match.")]
-    public float yawOffsetDegrees = 0f;
-
-    [Tooltip("Flip the computed angle if left/right or up/down is reversed.")]
-    public bool invertAngle = false;
-
-    [Header("Depth")]
-    public float lockedZ = -2f;
+    Rigidbody2D purly;
+    GameObject wall;
 
     void Start()
     {
-        // Lock Z so you never drift into/out of camera depth
-        Vector3 p = transform.position;
-        p.z = lockedZ;
-        transform.position = p;
-
-        // Start upright
-        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        purly = GetComponent<Rigidbody2D>();
+        wall = GameObject.Find("wall");
     }
 
     void Update()
     {
-        // Input (New Input System)
-        Vector2 input = Vector2.zero;
-        var kb = Keyboard.current;
+        // Movement (WASD + Arrow Keys)
 
-        if (kb != null)
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) // FIXED ||
         {
-            if (kb.aKey.isPressed || kb.leftArrowKey.isPressed)  input.x -= 1f;
-            if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) input.x += 1f;
-            if (kb.wKey.isPressed || kb.upArrowKey.isPressed)    input.y += 1f;
-            if (kb.sKey.isPressed || kb.downArrowKey.isPressed)  input.y -= 1f;
+            purly.MovePosition(transform.position + new Vector3(0f, speed * Time.deltaTime, 0f)); // FIXED
         }
 
-        if (input.sqrMagnitude > 1f) input.Normalize();
-
-        // Move on X/Y only
-        Vector3 move = new Vector3(input.x, input.y, 0f);
-        transform.position += move * moveSpeed * Time.deltaTime;
-
-        // Lock Z
-        Vector3 pos = transform.position;
-        pos.z = lockedZ;
-        transform.position = pos;
-
-        // Rotate on Y only (on feet)
-        if (move.sqrMagnitude > 0.0001f)
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) // FIXED ||
         {
-            // Compute angle from movement direction
-            float angle = Mathf.Atan2(move.y, move.x) * Mathf.Rad2Deg;
-
-            // Optional flip
-            if (invertAngle) angle = -angle;
-
-            // Apply offset to match your model's "front"
-            float targetY = angle + yawOffsetDegrees;
-
-            Quaternion targetRot = Quaternion.Euler(0f, targetY, 0f);
-            transform.rotation = Quaternion.RotateTowards(
-                transform.rotation,
-                targetRot,
-                rotationSpeed * Time.deltaTime
-            );
+            purly.MovePosition(transform.position + new Vector3(0f, -speed * Time.deltaTime, 0f));
         }
 
-        // Force upright: no X/Z tilt
-        Vector3 e = transform.eulerAngles;
-        transform.rotation = Quaternion.Euler(0f, e.y, 0f);
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) // FIXED ||
+        {
+            purly.MovePosition(transform.position + new Vector3(speed * Time.deltaTime, 0f, 0f));
+        }
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // FIXED ||
+        {
+            purly.MovePosition(transform.position + new Vector3(-speed * Time.deltaTime, 0f, 0f));
+        }
+
+        // Rotation (Q/E)
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Find("Bottom").Rotate(0f, 0f, rotationSpeed * Time.deltaTime); // FIXED name + axis
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Find("Bottom").Rotate(0f, 0f, -rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("balloonTag"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
-
-
