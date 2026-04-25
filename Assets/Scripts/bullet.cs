@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bullet : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class bullet : MonoBehaviour
         if (collision.gameObject.name == "Purly")
         {
             Destroy(collision.gameObject);
+            SceneManager.LoadScene("LandingScene");
         }
     }
 }

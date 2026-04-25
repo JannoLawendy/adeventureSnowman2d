@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/LandingScene.unity
+    guid: 34d48bcf637684f9c8aa3a393b5ea774
+  - enabled: 0
+    path: Assets/Scenes/GameScene.unity
+    guid: 5e67c8f2e252d4e75bf86534320e46fd
+  - enabled: 1
+    path: Assets/Scenes/HighScoreScene.unity
+    guid: eda26e411123a4579b4274414b5c5159
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 4ed2d8d4fb14a4e58ba24a3089ae9ad6, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

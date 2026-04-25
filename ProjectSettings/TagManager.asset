@@ -5,14 +5,17 @@ TagManager:
   serializedVersion: 3
   tags:
   - balloonTag
+  - purly
+  - Purly
+  - Snowball
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - score
   - 
   - 
   - 
@@ -41,6 +44,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 337938997
+    locked: 0
+  - name: Front
+    uniqueID: 751198353
+    locked: 0
+  - name: Player
+    uniqueID: 3249447113
+    locked: 0
+  - name: score
+    uniqueID: 343375115
     locked: 0
   m_RenderingLayers:
   - Default
