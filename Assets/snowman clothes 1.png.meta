@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: c4b949d5cb8d64b10a79fc7d3ba2ca30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8509759239685374944
+    second: snowman clothes 1_0
+  - first:
+      213: 5400720992315525519
+    second: snowman clothes 1_1
+  - first:
+      213: -5312333691993412571
+    second: snowman clothes 1_2
+  - first:
+      213: 7796100439346436570
+    second: snowman clothes 1_3
+  - first:
+      213: -7565510806954261391
+    second: snowman clothes 1_4
+  - first:
+      213: 1220775657481298373
+    second: snowman clothes 1_5
+  - first:
+      213: -6779143243882454200
+    second: snowman clothes 1_6
+  - first:
+      213: -4458226068621936818
+    second: snowman clothes 1_7
+  - first:
+      213: 5360706777117034644
+    second: snowman clothes 1_8
+  - first:
+      213: -3488911106736149256
+    second: snowman clothes 1_9
+  - first:
+      213: -1949102755554658426
+    second: snowman clothes 1_10
+  - first:
+      213: 5056465106091587186
+    second: snowman clothes 1_11
+  - first:
+      213: -7320786649207264473
+    second: snowman clothes 1_12
+  - first:
+      213: 3677443920249267791
+    second: snowman clothes 1_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snowman clothes 1_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 710
+        width: 208
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e38b8d11fcb81670800000000000000
+      internalID: 8509759239685374944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 710
+        width: 199
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8946f5d02733fa40800000000000000
+      internalID: 5400720992315525519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 700
+        width: 199
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ca46037acc646b0800000000000000
+      internalID: -5312333691993412571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_3
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 712
+        width: 208
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9d2884b00513c60800000000000000
+      internalID: 7796100439346436570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_4
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 704
+        width: 208
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174cc1f3108e10790800000000000000
+      internalID: -7565510806954261391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_5
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 396
+        width: 208
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1ed961ef011f010800000000000000
+      internalID: 1220775657481298373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_6
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 388
+        width: 193
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843a5ea1325abe1a0800000000000000
+      internalID: -6779143243882454200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_7
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 372
+        width: 178
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e473763e2033122c0800000000000000
+      internalID: -4458226068621936818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_8
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 388
+        width: 232
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498071b596e056a40800000000000000
+      internalID: 5360706777117034644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_9
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 406
+        width: 220
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fca31e55d5e49fc0800000000000000
+      internalID: -3488911106736149256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_10
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 158
+        width: 238
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687fd60ee5563f4e0800000000000000
+      internalID: -1949102755554658426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_11
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 158
+        width: 232
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2763fb3493c2c2640800000000000000
+      internalID: 5056465106091587186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_12
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 158
+        width: 148
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b24996457576a90800000000000000
+      internalID: -7320786649207264473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman clothes 1_13
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 158
+        width: 151
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46a0e3f2c7e80330800000000000000
+      internalID: 3677443920249267791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      snowman clothes 1_0: 8509759239685374944
+      snowman clothes 1_1: 5400720992315525519
+      snowman clothes 1_10: -1949102755554658426
+      snowman clothes 1_11: 5056465106091587186
+      snowman clothes 1_12: -7320786649207264473
+      snowman clothes 1_13: 3677443920249267791
+      snowman clothes 1_2: -5312333691993412571
+      snowman clothes 1_3: 7796100439346436570
+      snowman clothes 1_4: -7565510806954261391
+      snowman clothes 1_5: 1220775657481298373
+      snowman clothes 1_6: -6779143243882454200
+      snowman clothes 1_7: -4458226068621936818
+      snowman clothes 1_8: 5360706777117034644
+      snowman clothes 1_9: -3488911106736149256
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

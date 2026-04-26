@@ -8,6 +8,11 @@ TagManager:
   - purly
   - Purly
   - Snowball
+  - Ground
+  - WaterFall
+  - WaterFall1
+  - WaterFall2
+  - WaterFall3
   layers:
   - Default
   - TransparentFX
